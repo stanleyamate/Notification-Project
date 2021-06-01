@@ -13,6 +13,8 @@ nav{
 #defButton{
     background: #34495e;
     color: white;
+    width: 10rem;
+    border-radius: 20px;
 }
 #defButton:hover{
     color: #34495e;
