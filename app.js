@@ -15,9 +15,14 @@ app.get('/', function(req, res) {
   res.render('pages/index');
 });
 
-// about page
+// logs page
 app.get('/logs', function(req, res) {
   res.render('pages/logs');
+});
+
+// logs page
+app.get('/task', function(req, res) {
+  res.render('pages/task');
 });
 
 app.listen(8080);
