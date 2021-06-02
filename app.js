@@ -10,17 +10,17 @@ app.set('view engine', 'ejs');
 app.use(cookieParser());
 // use res.render to load up an ejs view file
 
-// index page
+// index route
 app.get('/', function(req, res) {
   res.render('pages/index');
 });
 
-// logs page
+// logs route
 app.get('/logs', function(req, res) {
   res.render('pages/logs');
 });
 
-// logs page
+// task route
 app.get('/task', function(req, res) {
   res.render('pages/task');
 });
