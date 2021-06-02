@@ -9,12 +9,22 @@
   <%- include('../partials/header'); %>
 </header>
 
-<main>
-  <div class="jumbotron">
-    <h1>LOGS</h1>
+<main class="mb-3">
+    <div class="container">
+      <h1 class="display-4 mt-2 mb-4">Recent Logs</h1>
+      <% for( var i = 0; i < tasks.length; i++){ %>
+        <ul class="list-group">
+          <li class="list-group-item mb-2" value="<%= tasks[i] %>">
+            <%= tasks[i] %>
+            <small> date</small>
+          </li>
+          
+        </ul>
+        <% } %>
+      </div>
+      
+    </main>
     
-  </div>
-</main>
 
 <footer>
   <%- include('../partials/footer'); %>
